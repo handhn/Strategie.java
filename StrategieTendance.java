@@ -25,4 +25,11 @@ public class StrategieTendance extends Strategie {
         // Étape 5 : Si aucune condition n'est remplie, attendre
         return "ATTENTE";
     }
+
+    @Override
+    public String executer(List<Double> closingPrices) {
+        // Cette méthode pourrait lever une exception si elle n'est pas supportée
+        throw new UnsupportedOperationException("Cette stratégie ne nécessite pas des prix de clôture.");
+    }
+
 }
