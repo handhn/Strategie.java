@@ -9,11 +9,8 @@ public abstract class Strategie {
         this.indicateurs = indicateurs;
     }
 
-    // Méthode pour les stratégies utilisant tous les types de prix
-    public abstract String executer(List<Double> prices);
-    
-    // Méthode pour les stratégies utilisant uniquement les prix de clôture
-    public abstract String executer(List<Double> closingPrices);
+    //public abstract String executerAvecPrix(List<Double> prices);
+    public abstract String executerAvecPrixCloture(List<Double> closingPrices);
     
     public String getNom() {
         return nom;
